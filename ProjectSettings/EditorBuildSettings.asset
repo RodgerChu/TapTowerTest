@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: f740abd87403efa47a284737d2dab364
+  - enabled: 1
+    path: Assets/Scenes/Gameplay.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Buildings/ArcadeMachine.unity
+    guid: d5369b310c16ef04b928a14876cf0940
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Balloonhouse.unity
+    guid: 1bb32394c11352848929d6165edcd4ed
+  - enabled: 1
+    path: Assets/Scenes/Buildings/BigBen.unity
+    guid: 004fd5bcf78566c4ebfd3f1c0434fef3
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Burger.unity
+    guid: 7c649b71c1b9ab144af1e44c5883e0b8
+  - enabled: 1
+    path: Assets/Scenes/Buildings/CarDump.unity
+    guid: 78f18eae3edcc1140a1a05c2ee6a8ad6
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Chest.unity
+    guid: daabbd3a21633b94a9e2cc0b31d0f871
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Cinema.unity
+    guid: 0595b1598f5c4344fab7c4ceec515129
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Circus.unity
+    guid: 31a751474cdc9614084f91568b95614b
+  - enabled: 1
+    path: Assets/Scenes/Buildings/CrabHouse.unity
+    guid: f509c4334bcb510459ae722704be888c
+  - enabled: 1
+    path: Assets/Scenes/Buildings/DeathStar.unity
+    guid: adaef2429d78da347b1311a947d6ce0a
+  - enabled: 1
+    path: Assets/Scenes/Buildings/DraculaCastle.unity
+    guid: 0467201fd3cc1444e818815ced65572c
+  - enabled: 1
+    path: Assets/Scenes/Buildings/EasterBunnyHouse.unity
+    guid: 50bb61ec0bec6534bb053fc4a9db43ab
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Egypt.unity
+    guid: 8f96ba3c90e3c5644836e22821d94fb9
+  - enabled: 1
+    path: Assets/Scenes/Buildings/FishermanHouse.unity
+    guid: 3a538901eeb627c4d9e0121eeacb4c2a
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Flycatcher.unity
+    guid: 5a528652a4c6f894491b750655316014
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Ghostbusters.unity
+    guid: 01e9347d502ff0a40be81a41da4f974b
+  - enabled: 1
+    path: Assets/Scenes/Buildings/GingerbreadHouse.unity
+    guid: d2cdae82b8036cb429a9a435e2c99873
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Gotham.unity
+    guid: 1d50528badcfca64bbaa09793dcd9a18
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Hogwarts.unity
+    guid: ca1b3b6379b99c24ba97590943e4106b
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Igloo.unity
+    guid: 536a35e450515494497a09173bc7c3b9
+  - enabled: 1
+    path: Assets/Scenes/Buildings/KingKong.unity
+    guid: b72a2b5700229b644a6172d5ed572183
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Lighthouse.unity
+    guid: a971744b4d0cf0b44b4beebd2dda0059
+  - enabled: 1
+    path: Assets/Scenes/Buildings/MariachiHouse.unity
+    guid: 56d3f5b6ca622e64d8ffa68db2a9cf4f
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Mill.unity
+    guid: 1ecdd47a76f97eb42a188736ddbefe2c
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Moscow.unity
+    guid: 825251c8c34a1484d9514332781cef82
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Museum.unity
+    guid: 32ec3fd0006b8e246a563935ca0399d6
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Pagoda.unity
+    guid: 7123b5176a8f4fb4598f49c05749e5e3
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Parfenon.unity
+    guid: 04e672f22f6d8974eb7cdffe803b0fb2
+  - enabled: 1
+    path: Assets/Scenes/Buildings/RaptorCage.unity
+    guid: b4c1ff0f88711ad499ac8578d8ee538b
+  - enabled: 1
+    path: Assets/Scenes/Buildings/RapunzelTower.unity
+    guid: 20a299a749d08ac4c9e394e0b4ed00bb
+  - enabled: 1
+    path: Assets/Scenes/Buildings/RicksGarage.unity
+    guid: 8f2b6c285375e2641ad4ca97512b28b7
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Robot.unity
+    guid: 313ab613bd647604881f19820f483943
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Rocket.unity
+    guid: 41621bf48ec3b1d41bf648d0efe2b6c7
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Saloon.unity
+    guid: 697a28f510a023c468b0dc6c3f0dcaf4
+  - enabled: 1
+    path: Assets/Scenes/Buildings/ShipOctopus.unity
+    guid: 8b38e56fc5263834d9512482bf026b2b
+  - enabled: 1
+    path: Assets/Scenes/Buildings/SimpsonsHouse.unity
+    guid: cbedbe58d0d6640439470de5a26012b2
+  - enabled: 1
+    path: Assets/Scenes/Buildings/SpongebobHouse.unity
+    guid: cf599504c2e40ac44b086f2cffa86ee5
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Submarine.unity
+    guid: d3e7a6bbd5345cd418396f5c8eb8e77e
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Supermarket.unity
+    guid: b3b9a0417ce711040912272e05390613
+  - enabled: 1
+    path: Assets/Scenes/Buildings/TowerBase.unity
+    guid: 375edc9957b473043ab75abd5d56b392
+  - enabled: 1
+    path: Assets/Scenes/Buildings/TowerOfSauron.unity
+    guid: 65674d65bf45713448d90feb3b3a72da
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Tree.unity
+    guid: 27d46e0c7891e1a48bc6dc57af725ac2
+  - enabled: 1
+    path: Assets/Scenes/Buildings/TurtleSewerage.unity
+    guid: 1d54a8d0d9ea50648b6fc8714f792a8a
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Ufo.unity
+    guid: 2052899189e9e4349906d9eb50e21f10
+  - enabled: 1
+    path: Assets/Scenes/Buildings/Volkswagen.unity
+    guid: d8996170f20fbbf49b787b3702cac46e
+  - enabled: 1
+    path: Assets/Scenes/Buildings/YagaHouse.unity
+    guid: 8b8cd07d7d25c424f9a8e71a11c676ae
+  - enabled: 1
+    path: Assets/Scenes/Buildings/MagicalShack.unity
+    guid: c4907c85f5d7d8c4da8d0a5caea00dd7
+  - enabled: 1
+    path: Assets/Scenes/Buildings/GasStation.unity
+    guid: 1ab9047ebde23f54e91415002554a6d6
+  - enabled: 1
+    path: Assets/Scenes/Buildings/TrojanHorse.unity
+    guid: 61ae52db395593f469f3bb6c0dbcc4a1
+  - enabled: 1
+    path: Assets/Scenes/Buildings/ClawMachine.unity
+    guid: 7974442d975c03f42b5610817b5bc765
+  m_configObjects: {}
