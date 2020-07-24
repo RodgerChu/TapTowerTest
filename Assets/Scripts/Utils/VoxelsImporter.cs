@@ -109,14 +109,31 @@ namespace Utils
 						Vector3Int to = FindBlockFIFO(from, size, checkSame);
 
 						Vector3Int mid = from;
+
+						// create single material for all cubes
+						Material blockMaterial = new Material(Shader.Find("Standard"));
 						for (mid.x = from.x; mid.x <= to.x; ++mid.x)
 							for (mid.y = from.y; mid.y <= to.y; ++mid.y)
 								for (mid.z = from.z; mid.z <= to.z; ++mid.z)
-									visited[mid.x, mid.y, mid.z] = true;
+                                {
+									// use material propterty block to prevent duplicating material
+									MaterialPropertyBlock propBlock = new MaterialPropertyBlock();
+									var coord = new Vector3Int(mid.x, mid.y, mid.z);
+									var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-						// TODO: place a block at found placement
-						Debug.LogError("Block placement is not implemented");
-					}
+									cube.transform.parent = place;
+									cube.transform.position = new Vector3(mid.x, mid.y, mid.z);									
+
+									var meshRenderer = cube.GetComponent<Renderer>();
+									meshRenderer.sharedMaterial = blockMaterial;
+
+                                    meshRenderer.GetPropertyBlock(propBlock);
+                                    propBlock.SetColor("_Color", GetColor(coord, size));
+                                    meshRenderer.SetPropertyBlock(propBlock);
+
+                                    visited[mid.x, mid.y, mid.z] = true;
+								}
+                    }
 
 			EditorUtility.SetDirty(place);
 		}
@@ -131,7 +148,6 @@ namespace Utils
 			Vector3Int mid = Vector3Int.zero;
 			while (axisAvailable.Any(b => b))
 			{
-
 				do
 				{ axisIndex = (axisIndex + 1) % axisAvailable.Length; }
 				while (!axisAvailable[axisIndex]);
@@ -159,7 +175,7 @@ namespace Utils
 
 		private Color GetColor(Vector3Int cubeCoord, Vector3Int size)
 			=> slices.GetPixel(cubeCoord.x, cubeCoord.z + cubeCoord.y * size.z);
-
+				
 		private static bool Same(Color l, Color r)
 			=> Mathf.Abs(l.r - r.r) + Mathf.Abs(l.g - r.g) + Mathf.Abs(l.b - r.b) < 0.02f;
 
@@ -170,6 +186,8 @@ namespace Utils
 			foreach(var element in elements)
 				usedColors.AddRange(element.colors);
 
+			// probably use slices.GetPixels().Where(x => x.a > 0 && !usedColors.Any(uc => Same(x, uc))).ToArray()
+			// instead
 			forgottenColors
 				= slices.GetPixels()
 				.Where(x => x.a > 0)
