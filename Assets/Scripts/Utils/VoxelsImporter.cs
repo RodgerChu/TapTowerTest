@@ -122,7 +122,7 @@ namespace Utils
 									var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
 									cube.transform.parent = place;
-									cube.transform.position = new Vector3(mid.x, mid.y, mid.z);									
+									cube.transform.position = coord;
 
 									var meshRenderer = cube.GetComponent<Renderer>();
 									meshRenderer.sharedMaterial = blockMaterial;
@@ -186,8 +186,9 @@ namespace Utils
 			foreach(var element in elements)
 				usedColors.AddRange(element.colors);
 
-			// probably use slices.GetPixels().Where(x => x.a > 0 && !usedColors.Any(uc => Same(x, uc))).ToArray()
-			// instead
+			// probably use slices.GetPixels()
+			//		.Where(x => x.a > 0 && !usedColors.Any(uc => Same(x, uc))).ToArray()
+			// to avoid casting
 			forgottenColors
 				= slices.GetPixels()
 				.Where(x => x.a > 0)
